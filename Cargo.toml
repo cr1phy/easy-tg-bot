@@ -1,0 +1,17 @@
+[package]
+name = "easy-tg-bot"
+version = "1"
+edition = "2021"
+
+[dependencies]
+teloxide = { version = "0.12.2", features = ["macros"] }
+rand = { version = "0.8.5", features = ["small_rng"] }
+log = "0.4.17"
+pretty_env_logger = "0.4.0"
+tokio = { version = "1.26.0", features = ["rt-multi-thread", "macros"] }
+dotenv = "0.15.0"
+os_info = { version = "3.7.0", default-features = false }
+
+[[bin]]
+name = "easy-tg-bot"
+path = "src/main.rs"
