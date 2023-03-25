@@ -11,7 +11,3 @@ pretty_env_logger = "0.4.0"
 tokio = { version = "1.26.0", features = ["rt-multi-thread", "macros"] }
 dotenv = "0.15.0"
 os_info = { version = "3.7.0", default-features = false }
-
-[[bin]]
-name = "easy-tg-bot"
-path = "src/main.rs"
